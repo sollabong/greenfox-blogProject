@@ -96,7 +96,7 @@ textarea{
     margin-top: 1%;
 }
 
-.submit-btn:hover{
+.submit-img:hover, .submit-btn:hover{
     background-color: white;
 }
 
