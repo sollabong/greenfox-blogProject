@@ -126,6 +126,7 @@ textarea{
     font-size: 1.4rem;
     font-weight: 600;
     transform: rotate(-15deg);
+    font-family: 'Bebas Neue', cursive;
 }
 
 .hlabel-mark{
