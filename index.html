@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8a2de3897f.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto+Condensed&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+
+    <title>Greenfox Blog Project</title>
+</head>
+
+<body>
+    <header class="nav">
+        <h1><mark><i class="fas fa-feather-alt"></i> My Blog </mark></h1>
+    </header>
+
+    <section class="new-post">
+        <h2><mark> Create a new post </mark></h2>
+        <div class="add-post">
+            <div class="add-title">
+                <p class="new-post-title">Add title</p>
+                <input class="input-title" type="text" placeholder="Lorem ipsum dolor sit...">
+            </div>
+            <form action="#">
+                <p class="new-post-title">Select a highlight image: </p>
+                <input type="file" id="img" name="img" accept="image/*">
+                <input type="submit" class="submit-img">
+            </form>
+            <div class="add-content">
+                <p class="new-post-title">Add some content</p>
+                <textarea name="new content" id="" cols="30" rows="5" placeholder="Dear diary..."></textarea>
+            </div>
+
+            <button class="submit-btn">Submit</button>
+
+        </div>
+    </section>
+    <section class="posts">
+        <h2><mark> Posts </mark></h2>
+        <article class="highlighted-post">
+            <div class="highlighted-img">
+                <img src="./assets/Anatomy-of-the-Perfect-Blog-Post.png"
+                    alt="highlighted image of the perfect blog post">
+            </div>
+            <div class="highlighted-post-content">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p class="post-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </article>
+        <div class="post-grid">
+
+            <article class="post">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p class="post-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <article class="post">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p class="post-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+            <article class="post">
+                <h3>Lorem ipsum dolor sit amet</h3>
+                <p class="post-content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <p class="footer-text">This site was created by <a href="https://sollabong.com" target="_blank">SOLLABONG</a> at
+            <a href="https://greenfoxacademy.com" target="_blank">GREENFOX ACADEMY</a> in 2021
+        </p>
+    </footer>
+
+</body>
+
+</html>
