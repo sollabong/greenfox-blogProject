@@ -1,3 +1,5 @@
+/* Global styles */
+
 body{
     font-family: 'Roboto Condensed', sans-serif; 
     background-color: rgb(184, 255, 231);
@@ -7,6 +9,8 @@ body{
 a, .submit-img, .submit-btn{
     cursor: pointer;
 }
+
+/* Header */
 
 header{
     display:flex;
@@ -25,6 +29,8 @@ h1{
     font-family: 'Bebas Neue', cursive;
     transform: rotate(-3deg);
 }
+
+/* Create a post section */
 
 h2{
     text-align: center;
@@ -57,7 +63,7 @@ mark{
 
 .input-title{
     background-color: rgb(255, 255, 255);
-    padding: 10px 20px;
+    padding: 10px 60px 10px 20px;
     font-size: 1.2rem;
     border: 1px solid black;
     border-radius: 8px;
@@ -93,6 +99,8 @@ textarea{
 .submit-btn:hover{
     background-color: white;
 }
+
+/* Posts section */
 
 .posts{
     padding: 2% 10%;
@@ -155,10 +163,12 @@ h3 {
     width: 30%;
     margin-top: 2%;
     text-align: justify;
-    padding: 1%;
+    padding: 2%;
     background-color:rgb(213, 252, 239);
     box-sizing: border-box;
 }
+
+/* Footer */
 
 footer{
     height: 80px;
@@ -180,7 +190,7 @@ footer{
 
 /* MOBILE VERSION */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
     .highlighted-post{
         flex-direction: column;
         justify-content: center;
@@ -193,4 +203,8 @@ footer{
     .highlighted-post-content{
         width: 100%;
     }
-  }
+
+    .post{
+        width: 100%;
+    }
+}
