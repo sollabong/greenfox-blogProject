@@ -31,19 +31,19 @@
         <div class="add-post">
             <div class="add-title">
                 <p class="new-post-title">Add title</p>
-                <input class="input-title" type="text" placeholder="Lorem ipsum dolor sit...">
+                <input class="input-title" id="add-title" type="text" placeholder="Lorem ipsum dolor sit..." value="">
             </div>
             <form action="#">
                 <p class="new-post-title">Select a highlight image: </p>
                 <input type="file" id="img" name="img" accept="image/*">
-                <input type="submit" class="submit-img">
             </form>
             <div class="add-content">
                 <p class="new-post-title">Add some content</p>
-                <textarea name="new content" id="" cols="30" rows="5" placeholder="Dear diary..."></textarea>
+                <textarea name="new content" id="add-content" cols="30" rows="5" placeholder="Dear diary..."></textarea>
             </div>
 
-            <button class="submit-btn">Submit</button>
+            <button class="submit-btn" id="submit-post" onclick="addPost()">Submit</button>
+            <span> &nbsp; <i class="far fa-hand-point-left"></i> Try it, it works ;)</span>
 
         </div>
     </section>
@@ -53,13 +53,13 @@
             <div class="hlabel">
                 <mark class="hlabel-mark">LATEST POST</mark>
             </div>
-            <div class="highlighted-img">
+            <div class="highlighted-img" id="highlighted-img">
                 <img src="./assets/Anatomy-of-the-Perfect-Blog-Post.png"
                     alt="highlighted image of the perfect blog post">
             </div>
             <div class="highlighted-post-content">
-                <h3>Lorem ipsum dolor sit amet</h3>
-                <p class="post-content">
+                <h3 id="new-title">Lorem ipsum dolor sit amet</h3>
+                <p class="post-content" id="new-content">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
                     et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                     aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -108,6 +108,18 @@
         </p>
     </footer>
 
+    <!-- Here comes the javascript. It adds the content to the latest post from input fields -->
+    <script>
+        function addPost() {
+            var x = document.getElementById("add-title").value;
+            document.getElementById("new-title").innerText = x;
+
+            var y = document.getElementById("add-content").value;
+            document.getElementById("new-content").innerText = y;
+
+            document.getElementById("highlighted-img").innerHTML = '<img src="./assets/noimage.png" alt="highlighted image of the perfect blog post">';
+        }
+    </script>
 </body>
 
 </html>
